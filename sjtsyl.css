@@ -425,11 +425,11 @@ ul.profile-icons li a:hover {
 }
   
 .topic-header h1 {
-    font-family:var(--logo);
-    font-size:25px;
-    color:var(--c1);
-    text-transform:lowercase;
-    font-weight:400;
+    font-family: var(--logo) !important;
+    font-size: 25px !important;
+    color: var(--c1) !important;
+    text-transform: lowercase !important;
+    font-weight: 400 !important;
 }
 
 .page-title {
