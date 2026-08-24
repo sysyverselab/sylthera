@@ -469,7 +469,7 @@ ul.profile-icons li a:hover {
 
 .topic-watch i {
     font-size: 14px;
-    color: var(--c4);
+    color: var(--c1);
 }
 
 .topic-watch .specials_links {
@@ -480,7 +480,7 @@ ul.profile-icons li a:hover {
 }
 
 .topic-watch .specials_links a {
-    color: var(--txt2);
+    color: #fff;
     text-decoration: none;
 }
 
