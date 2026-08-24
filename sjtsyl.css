@@ -458,11 +458,13 @@ ul.profile-icons li a:hover {
     font-size: 9px;
     letter-spacing: .05em;
     text-transform: uppercase;
-    color: var(--txt2);
+    color: #fff;
 }
 
 .topic-watch:hover{
     transform:translateY(-2px);
+    border-color: var(--c1);
+    color: var(--c1);
 }
 
 .topic-watch i {
@@ -641,14 +643,16 @@ ul.profile-icons li a:hover {
     font-size: 9px;
     letter-spacing: .05em;
     text-transform: uppercase;
-    color: var(--txt2);
+    color: #fff;
     text-decoration: none;
     white-space: nowrap;
+    transition: .35s; 
 }
 
 .topic-actions .buttons:hover {
     border-color: var(--c1);
     color: var(--c1);
+    transform:translateY(-2px);
 }
 
 a.fa-mention {
