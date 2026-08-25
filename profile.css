@@ -207,8 +207,8 @@
     font-size: 9px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--border1);
-    font-family: #fff;
+    color: #fff;
+    font-family: var(--ctt);
     white-space: nowrap;
 }
 .prev-infos-sep {
