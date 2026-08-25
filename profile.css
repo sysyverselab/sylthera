@@ -1,0 +1,280 @@
+/*** PREV PRO ***/
+.wombat-overlay {
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s opacity ease;
+  background: var(--bg1);
+  backdrop-filter: blur(10px);
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.wombat-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wombat-aside {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  z-index: 1000!important;
+  visibility: hidden;
+  opacity: 0;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: var(--shadowBox);
+  border-radius: 10px;
+  height: max-content;
+  transform: translateY(12px) scale(.96);
+  transition: transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1), opacity 0.3s, visibility 0.3s;
+}
+
+.wombat-aside.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  visibility: visible;
+}
+
+.prev-pro {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profil-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+.profil-header-img {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 0 0 auto;
+    z-index: 1;
+}
+
+.profil-header-imgleft img,
+.profil-header-imgright img {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid var(--border1);
+    outline: 1px solid var(--border1);
+    outline-offset: 5px;
+    filter: saturate(0.65) contrast(0.9) brightness(0.82) sepia(0.12);
+    opacity: 0.88;
+    transition: filter 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profil-header-title {
+    position: relative;
+}
+
+.profil-header-title .pseudo {
+    display: block;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-family: var(--logo);
+    font-size: 73px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: lowercase;
+    text-shadow: 2px 2px #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .5px;
+    color: var(--c4);
+}
+
+.profil-header-title .pseudo,
+.profil-header-title .pseudo * {
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-text-stroke: .5px var(--c4) !important;
+}
+  
+.profil-header-title .pseudo strong { 
+  font-weight: 400 !important;
+  color: transparent !important;
+}
+
+.profil-header-imgleft .img-item{display: none;}
+.profil-header-imgright .img-item{display: none;}
+.profil-header-imgleft .img-item#field_id10 {display: block !important;}
+.profil-header-imgright .img-item#field_id11 {display: block !important;}
+  
+.profil-header-imgleft .field_uneditable,
+.profil-header-imgright .field_uneditable {
+    display: flex !important;
+    gap: 8px;
+    align-items: center;
+}
+.profil-header-imgleft .field_uneditable img,
+.profil-header-imgright .field_uneditable img {
+    margin-right: 15px;
+}
+
+.profil-header-imgleft .field_uneditable img:last-child,
+.profil-header-imgright .field_uneditable img:last-child {
+    margin-right: 0;
+}
+
+.prev-infos-grid .infos-item{
+    display: none;
+}
+
+.prev-infos-grid .infos-item#field_id1,
+.prev-infos-grid .infos-item#field_id2,
+.prev-infos-grid .infos-item#field_id3,
+.prev-infos-grid .infos-item#field_id6,
+.prev-infos-grid .infos-item#field_id7,
+.prev-infos-grid .infos-item#field_id9 {
+  display: block !important;
+}
+  
+.prev-infos-grid .infos-item .iconsax {
+  font-size: 13px;
+  color: var(--c1);
+}
+
+.prev-infos {
+    display: flex;
+    align-items: stretch;
+    gap: 34px;
+    background: var(--bg4);
+    backdrop-filter: blur(5px);
+    color: var(--txt);
+    padding: 30px 40px;
+    font-family: var(--font-family-system);
+    border-radius: 5px;
+    border: 1px solid var(--border1);
+    position: relative;
+    overflow: hidden;
+}
+
+.prev-infos-titre {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 70px;
+}
+
+.prev-infos-titre .num {
+    font-family: var(--logo);
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--c1);
+    letter-spacing: .01em;
+    color: var(--c1);
+    text-shadow:
+        0 0 18px rgba(218, 125, 150, .12);
+    transition: 
+        color .4s ease,
+        text-shadow .4s ease,
+        transform .4s ease;
+}
+.prev-infos:hover .num {
+    text-shadow:
+        0 0 8px rgba(218, 125, 150, .25),
+        0 0 28px rgba(218, 125, 150, .15);
+    transform: translateX(4px);
+}
+  
+.prev-infos-titre .lbl {
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--border1);
+    font-family: #fff;
+    white-space: nowrap;
+}
+.prev-infos-sep {
+  flex: 0 0 auto;
+  width: 1px;
+  background: var(--border1);
+  margin: 4px 0;
+}
+.prev-infos-grid {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 22px;
+  column-gap: 18px;
+}
+@media (max-width: 640px) {
+  .prev-infos-grid {grid-template-columns: repeat(2, 1fr);}
+}
+  
+.infos-item {position: relative;}
+  
+.infos-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 4px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--c2);
+    opacity: 0;
+    box-shadow: 0 0 10px var(--c2);
+    transition: opacity .3s ease;
+}
+.infos-item:hover::before {
+    opacity: 1;
+}
+.infos-item .k {
+    display: block;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--c4);
+    transition: color .35s ease,
+    box-shadow: 0 0 10px var(--c1);
+}
+  
+.infos-item:hover .k {
+    border-bottom: 1px solid var(--c2);
+}
+  
+.infos-item .v {
+    display: block;
+    font-size: 12px;
+    opacity: .5;
+    transition:
+        color .35s ease,
+        transform .35s ease;
+}
+.infos-item:hover .v {
+    transform: translateX(5px);
+}
+
+/*** FIN PREV PRO ***/
