@@ -173,3 +173,16 @@
   vertical-align: middle;
   opacity: 0.6;
 }
+.topicslist-lastpost i {
+  padding-left: 4px; 
+  color: var(--c1); 
+  transform:translateX(-8px);
+  transition:.35s;
+  font-size: 9px; 
+}
+  
+.topics-last:hover i {
+  transform:translateX(0);
+  padding-left: 10px;
+  color: var(--txt);
+}
