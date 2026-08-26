@@ -103,14 +103,14 @@
     text-shadow: 2px 2px #fff;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: .5px;
-    color: var(--c4);
+    color: var(--member-color, var(--c4));
 }
 
 .profil-header-title .pseudo,
 .profil-header-title .pseudo * {
     color: transparent !important;
     -webkit-text-fill-color: transparent !important;
-    -webkit-text-stroke: .5px var(--c4) !important;
+    -webkit-text-stroke: .5px var(--member-color, var(--c4)) !important;
 }
   
 .profil-header-title .pseudo strong { 
@@ -186,7 +186,6 @@
     font-family: var(--logo);
     font-size: 60px;
     font-weight: 400;
-    color: var(--c1);
     letter-spacing: .01em;
     color: var(--c1);
     text-shadow:
