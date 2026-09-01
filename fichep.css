@@ -5,6 +5,7 @@
   position: relative;
   overflow: hidden;
   font-size: 12px;
+  text-align: justify;
 }
 
 .fa-glow {
