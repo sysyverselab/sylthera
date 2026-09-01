@@ -213,7 +213,8 @@
 .spart{
   margin-bottom:10px !important;
 }
-label{
+
+.fp-desc label{
   font:600 8px 'Poppins';
   background: #fff;
   color: var(--c4);
