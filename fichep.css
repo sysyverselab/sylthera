@@ -839,3 +839,15 @@ background: var(--bg4);
         scale(1.15)
         rotate(45deg);
 }
+
+.famille-grid{margin-bottom: 10px;display: inline-flex;width: 100%;justify-content: space-evenly;gap:14px;}
+.famille-grid .block{overflow:hidden;width: 31%;}
+.fam-header{padding:16px 14px;text-align:center;border-bottom:1px solid var(--border1);}
+.fam-titre{display:block;font-family:var(--ctt);font-size:10px;letter-spacing:.5px;text-transform:uppercase;font-weight:bolder;background:var(--grad2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.fam-stt{display:block;margin-top:4px;font-family:var(--ctt);font-size:8px;text-transform:uppercase;color:var(--txt);opacity:.55;}
+.fam-liste{padding:14px;display:flex;flex-direction:column;}
+.fam-item{display:flex;align-items:baseline;gap:6px;font-size:10px;margin-bottom: -15px;}
+.li-nom{font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:var(--txt);}
+.li-sep{color:var(--txt);opacity:.4;}
+.li-age{font-weight:700;color:var(--txt);opacity:.6;}
+.li-genre{font-size:11px;color:var(--txt);opacity:.6;margin-left:2px;}
