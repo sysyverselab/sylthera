@@ -45,6 +45,7 @@
 .fa-banner-text {text-align: center;}
 
 .fa-banner-text .name {
+  text-transform: lowercase;
   display: flex;
   align-items: center;
   justify-content: center;
