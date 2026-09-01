@@ -154,7 +154,7 @@
   
 .prev-infos-grid .infos-item .iconsax {
   font-size: 13px;
-  color: var(--c1);
+  color: var(--member-color, var(--c1));
 }
 
 .prev-infos {
@@ -187,7 +187,7 @@
     font-size: 60px;
     font-weight: 400;
     letter-spacing: .01em;
-    color: var(--c1);
+    color: var(--member-color, var(--c1));
     text-shadow:
         0 0 18px rgba(218, 125, 150, .12);
     transition: 
@@ -237,9 +237,9 @@
     width: 3px;
     height: 3px;
     border-radius: 50%;
-    background: var(--c2);
+    background: var(--member-color, var(--c2));
     opacity: 0;
-    box-shadow: 0 0 10px var(--c2);
+    box-shadow: 0 0 10px var(--member-color, var(--c2));
     transition: opacity .3s ease;
 }
 .infos-item:hover::before {
@@ -255,13 +255,13 @@
     color: #fff;
     padding-bottom: 4px;
     margin-bottom: 4px;
-    border-bottom: 1px solid var(--c4);
+    border-bottom: 1px solid var(--member-color, var(--c4));
     transition: color .35s ease,
-    box-shadow: 0 0 10px var(--c1);
+    box-shadow: 0 0 10px var(--member-color, var(--c1));
 }
   
 .infos-item:hover .k {
-    border-bottom: 1px solid var(--c2);
+    border-bottom: 1px solid var(--member-color, var(--c2));
 }
   
 .infos-item .v {
