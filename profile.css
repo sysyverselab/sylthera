@@ -276,4 +276,162 @@
     transform: translateX(5px);
 }
 
+.ava_cadre {
+    position: relative;
+    overflow: hidden;
+}
+.pro-ava img {
+    display: block;
+    width: 100%;
+    transition: filter .45s ease, transform .45s ease;
+}
+.ava_cadre:hover .pro-ava img {
+    filter: blur(3px) brightness(.45) saturate(1.1);
+    transform: scale(1.04);
+}
+.ava_cadre::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--member-color, var(--c4)) 15%, transparent),
+        color-mix(in srgb, var(--member-color, var(--c4)) 70%, transparent)
+    );
+    opacity: 0;
+    transition: opacity .45s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+.ava_cadre:hover::after {
+    opacity: 1;
+}
+
+.ava-hover {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    justify-items: center;
+    align-content: center;
+    gap: 8px;
+    padding: 16px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity .4s ease, transform .4s ease;
+    pointer-events: none;
+    text-align: center;
+}
+.ava_cadre:hover .ava-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+.ava-hover .infos-ava {display: none;}
+
+/* img rond */
+.ava-hover #field_id19 {display: block; grid-column: 1 / 3; grid-row: 1; margin-bottom: 2px;}
+.ava-hover #field_id19 .k {display: none;}
+.ava-hover #field_id19 .v img {
+  width: 44px; 
+  height: 44px; 
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,.3); 
+  display: block; 
+  margin: 0 auto;
+} 
+  
+/* pseudo */
+.ava-hover #field_id-9 { display: block; grid-column: 1 / 3; grid-row: 2; }
+.ava-hover #field_id-9 .k {display: none;}
+.ava-hover #field_id-9 .v {
+  font-family: var(--soustt); 
+  font-size: 20px; 
+  font-weight: 400;
+  color: #fff; 
+  letter-spacing: .5px; 
+  text-transform: lowercase; 
+}
+
+
+.ava-hover #field_id17,
+.ava-hover .ava-lastvisit,
+.ava-hover #field_id-4,
+.ava-hover #field_id-6 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2px;
+    padding: 2px 6px;
+}
+.ava-hover #field_id17     { grid-column: 1; grid-row: 4; border-right: 1px solid rgba(255,255,255,.18); }
+.ava-hover .ava-lastvisit  { grid-column: 2; grid-row: 4; }
+.ava-hover #field_id-4     { grid-column: 1; grid-row: 5; border-right: 1px solid rgba(255,255,255,.18); }
+.ava-hover #field_id-6     { grid-column: 2; grid-row: 5; }
+.ava-hover #field_id17 .v, .ava-hover .ava-lastvisit .v,
+.ava-hover #field_id-4 .v, .ava-hover #field_id-6 .v {
+  font-family: var(--ctt); 
+  font-size: 8px; 
+  font-weight: 700; 
+  text-transform: uppercase;
+  color: #fff; 
+  line-height: 1.2;
+}
+
+
+.ava-hover #field_id-11, .ava-hover #field_id8 {
+    display: block;
+    grid-column: 1 / 3;
+    width: 80%;
+    padding-top: 6px;
+}
+.ava-hover #field_id-11 {grid-row: 6;}
+.ava-hover #field_id8   {grid-row: 7;}
+.ava-hover #field_id-11 .v, .ava-hover #field_id8 .v {
+  display: block;
+  font-family: var(--ctt); 
+  font-size: 9px; 
+  color: #fff;
+}
+  
+.ava-hover #field_id17 .k,
+.ava-hover #field_id-4 .k,
+.ava-hover #field_id-6 .k,
+.ava-hover #field_id-11 .k,
+.ava-hover #field_id8 .k {
+    font-size: 0;
+    line-height: 0;
+}
+
+.ava-hover #field_id17 .k::before  { content: "pronoms"; }
+.ava-hover #field_id-4 .k::before  { content: "inscription"; }
+.ava-hover #field_id-6 .k::before  { content: "messages"; }
+.ava-hover #field_id-11 .k::before { content: "fc"; }
+.ava-hover #field_id8 .k::before   { content: "crédits"; }
+
+.ava-hover #field_id17 .k::before,
+.ava-hover #field_id-4 .k::before,
+.ava-hover #field_id-6 .k::before,
+.ava-hover #field_id-11 .k::before,
+.ava-hover #field_id8 .k::before {
+    font-family: var(--ctt);
+    font-size: 7px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5);
+}
+.ava-hover .ava-lastvisit .k {
+    font-family: var(--ctt);
+    font-size: 7px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.5);
+}
+  
+.ava-hover #field_id17,
+.ava-hover .ava-lastvisit,
+.ava-hover #field_id-4,
+.ava-hover #field_id-6 {
+    justify-self: stretch;
+}
 /*** FIN PREV PRO ***/
