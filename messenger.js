@@ -31,7 +31,7 @@
         // Date du dernier message d'un sujet dans la liste des sujets
         lastpost_date: "cat-last date, .blog_cal-content",
         // Avatar du dernier posteur d'un sujet dans la liste des sujets
-        lastpost_avatar: ".topicslist-avatar-lastpost img, .lastpost-avatar img",
+        lastpost_avatar: "cat-last-av img, .topicslist-avatar-lastpost img, .lastpost-avatar img",
         // Type d'un sujet (note, annonce, sondage...)
         topic_type: ".topic-type > strong",
         // Un post
