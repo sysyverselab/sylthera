@@ -219,7 +219,7 @@ opacity:.4;
 }
 
 .pro-tab:hover {
-    border-color: var(--c1);
+    border-color: var(--c1)!important;
 }
   
 .post_contact img{
