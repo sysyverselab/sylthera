@@ -198,23 +198,24 @@ opacity:.4;
 }
 
 .pro-tab {
-    flex: 1;
-    background: none;
-    border: 1px solid var(--border1);
-    color: var(--txt2);
-    font-family: var(--ctt);
-    font-size: 8px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    padding: 6px 4px;
-    cursor: pointer;
-    transition: .25s ease;
+    flex: 1 !important;
+    background: none !important;
+    border: 1px solid var(--border1) !important;
+    color: var(--txt2) !important;
+    font-family: var(--ctt) !important;
+    font-size: 8px !important;
+    letter-spacing: .1em !important;
+    text-transform: uppercase !important;
+    padding: 6px 4px !important;
+    cursor: pointer !important;
+    transition: .25s ease !important;
+    border-radius: 5px !important;
 }
 
 .pro-tab.active {
-    color: var(--c1);
-    border-color: var(--c1);
-    background: var(--bg4);
+    color: var(--c1) !important;
+    border-color: var(--c1) !important;
+    background: var(--bg4) !important;
 }
 
 .pro-tab:hover {
