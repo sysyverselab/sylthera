@@ -246,6 +246,11 @@ cat-left:hover cat-last-av img{
 #c3 cat-left:hover cat-last-av img{
   box-shadow:0 0 80px rgb(255 255 255 / 43%);
   transition: all 1s ease-out;}
+
+#c4 cat-left cat-last-av img{box-shadow:0 0 40px rgb(255 255 255 / 43%);}
+#c4 cat-left:hover cat-last-av img{
+  box-shadow:0 0 80px rgb(255 255 255 / 43%);
+  transition: all 1s ease-out;}
   
 #c5 cat-left cat-last-av img{box-shadow:0 0 40px rgb(255 255 255 / 43%);}
 #c5 cat-left:hover cat-last-av img{
@@ -260,6 +265,9 @@ cat-left:hover cat-last-av img{
 
 #c3 .inner_cat.forum_new cat-left cat-last-av img {box-shadow:0 0 40px var(--c1);}
 #c3 .inner_cat.forum_new cat-left:hover cat-last-av img {box-shadow:0 0 80px var(--c1);}
+
+#c4 .inner_cat.forum_new cat-left cat-last-av img {box-shadow:0 0 40px var(--c1);}
+#c4 .inner_cat.forum_new cat-left:hover cat-last-av img {box-shadow:0 0 80px var(--c1);}
   
 #c5 cat-left cat-last-av img{box-shadow:0 0 40px rgb(255 255 255 / 43%);}
 #c5 cat-left:hover cat-last-av img{
@@ -274,6 +282,9 @@ cat-left:hover cat-last-av img{
   
 #c3 .inner_cat.forum_new cat-left cat-last-av img {box-shadow:0 0 40px var(--c1);}
 #c3 .inner_cat.forum_new cat-left:hover cat-last-av img {box-shadow:0 0 80px var(--c1);}
+
+#c4 .inner_cat.forum_new cat-left cat-last-av img {box-shadow:0 0 40px var(--c1);}
+#c4 .inner_cat.forum_new cat-left:hover cat-last-av img {box-shadow:0 0 80px var(--c1);}
   
 #c5 .inner_cat.forum_new cat-left cat-last-av img {box-shadow:0 0 40px var(--c1);}
 #c5 .inner_cat.forum_new cat-left:hover cat-last-av img {box-shadow:0 0 80px var(--c1);}
