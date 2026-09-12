@@ -25,7 +25,7 @@
         row.classList.toggle("is-hidden", !ok);
         if (ok) { anyVisible = true; }
       });
-      if (noResult) { noResult.style.display = anyVisible ? "none" : "block"; }
+      if (noResult) { noResult.classList.toggle("is-visible", !anyVisible); }
     }
 
     app.querySelectorAll(".bottin-legend-group").forEach(function(group) {
