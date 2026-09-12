@@ -4,6 +4,12 @@
     if (!app) { return; }
 
     var rows = app.querySelectorAll(".bottin-table tbody tr");
+    var tbody = app.querySelector(".bottin-table tbody");
+Array.prototype.slice.call(rows).sort(function(a, b) {
+  var aText = (a.querySelector(".bottin-col-faceclaim") || {}).textContent || "";
+  var bText = (b.querySelector(".bottin-col-faceclaim") || {}).textContent || "";
+  return aText.trim().localeCompare(bText.trim(), "fr", { sensitivity: "base" });
+}).forEach(function(row) { tbody.appendChild(row); });
     var noResult = app.querySelector(".bottin-no-result");
     var active = { eveil: null, organisation: null };
     var searchTerm = "";
