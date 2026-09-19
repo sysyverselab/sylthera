@@ -7,7 +7,7 @@
       // Configuration de Forumactif Messenger
       // https://github.com/SethClydesdale/forumactif-messenger/wiki/Config
       config: {
-        chat_page: "",
+        chat_page: "https://sylthera.forumactif.com/f13-beam",
         chat_permission: "all", //  peut etre [all] ou [member] ou [staff]
         main_title: "Beam",
 
