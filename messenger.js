@@ -9,7 +9,7 @@
       config: {
         chat_page: "",
         chat_permission: "all", //  peut etre [all] ou [member] ou [staff]
-        main_title: "iMessage",
+        main_title: "Beam",
 
         // Gestion des onglets initiaux
         // https://github.com/SethClydesdale/forumactif-messenger/wiki/Config#initial_tabs
@@ -77,7 +77,7 @@
         no_tabs: "Vous n'avez pas d'onglet ouvert. Cliquez pour en ouvrir un.",
         no_tabs_initial: "Voulez-vous ouvrir les onglets de départ ?",
 
-        tooltip_openFAM: "iMessage",
+        tooltip_openFAM: "Beam",
         tooltip_back: "Retour",
         tooltip_menu: "Ouvrir le menu",
         tooltip_home: "Page d'accueil",
