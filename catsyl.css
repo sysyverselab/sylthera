@@ -45,7 +45,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    font-size: 9px;
+    font-size: 10px;
     font-family: var(--ctt);
     line-height: 18px;
 }
@@ -198,7 +198,7 @@ cat-left cat-last a{
 cat-left cat-last date {
   font-family: var(--ctt);
   text-transform: uppercase;
-  font-size:9px;
+  font-size:10px;
 } 
 
 cat-left cat-last date a {
@@ -330,7 +330,7 @@ desc {
 .fc-stats {
     flex-shrink: 0;
     font-family: var(--ctt);
-    font-size: 9px;
+    font-size: 10px;
     letter-spacing: .08em;
     text-transform: uppercase;
     color: var(--c4);
@@ -410,7 +410,7 @@ cat-right {
     justify-content: space-between;
     align-items: center;
     padding: 0 0 8px 18px;
-    font-size: 9px;
+    font-size: 10px;
     text-transform: uppercase;
     color: var(--text);
     border-bottom: 1px solid var(--border1);
@@ -620,7 +620,7 @@ cat-right {
   
 #c1 .inner_cat:nth-child(1) .cat_desc a::before{
     font-family: var(--ctt);
-    font-size:9px;
+    font-size:10px;
     color:var(--c1);
     opacity:.55;
     margin: 5px;
