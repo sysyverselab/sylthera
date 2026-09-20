@@ -902,7 +902,7 @@
     padding: 0 0 8px 18px;
     font-size: 9px;
     text-transform: uppercase;
-    color: var(--text);
+    color: var(--txt);
     border-bottom: 1px solid var(--border1);
     transition: .35s ease;
 }
