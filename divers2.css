@@ -1,0 +1,154 @@
+/*CODEX*/
+.tags-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+.tag-card {
+  background: var(--bg1);
+  border-radius: 5px;
+  padding: 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+  
+.tag-card-label {
+  font-family: var(--ctt);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--txt2);
+}
+.tag-card-preview {
+  min-height: 22px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.tag-card-preview hr {
+  margin: 0;
+  width: 100%;
+}
+.tag-card-wide {
+  grid-column: 1 / -1;
+}
+.tag-card .codebox {
+  margin: 0 !important;
+}
+.tag-card .codebox dd {
+  font-size: 10px !important;
+  word-break: break-word;
+}
+.tag-card .codebox dt {
+  position: static !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  height: auto !important;
+  margin-bottom: 4px !important;
+}
+.tag-card .codebox .copyCode {
+  position: static !important;
+}
+  
+  /*BEAM*/
+ 
+.beam-banner {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  max-height: 130px;
+  overflow: hidden;
+  padding: 0;
+}
+.beam-banner-photo {
+  position: relative;
+  flex: 0 0 200px;
+  overflow: hidden;
+}
+.beam-banner-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.beam-banner-photo-left img {
+  -webkit-mask-image: linear-gradient(to left, transparent 0%, rgba(0,0,0,.55) 35%, black 68%);
+  mask-image: linear-gradient(to left, transparent 0%, rgba(0,0,0,.55) 100%, black 68%);
+  filter: grayscale(1);
+    opacity: .5;
+}
+.beam-banner-photo-right img {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.55) 35%, black 68%);
+  mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.55) 100%, black 68%);
+  filter: grayscale(1);
+    opacity: .5;
+}
+  
+.beam-banner-content {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px 14px;
+  min-width: 0;
+}
+.beam-banner-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--ctt);
+  font-size: 7px;
+  text-transform: uppercase;
+      font-weight: bolder;
+    color: var(--c33);
+    letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.beam-banner-eyebrow .ln {
+  width: 22px;
+  height: 1px;
+  background: var(--c1);
+  display: inline-block;
+}
+.beam-banner-eyebrow .star {
+  color: var(--c4);
+  font-size: 10px;
+}
+.beam-banner-title {
+    font-family: var(--soustt);
+    font-size: 35px;
+    line-height: 1.25;
+  background: var(--grad2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border1);
+}
+.beam-banner-with {
+font-family: var(--ctt);
+    font-size: 7.5px;
+    color: var(--txt);
+    text-transform: uppercase;
+      margin-top: 10px;
+}
+  
+.post-staff {
+  max-width: 100%;
+  border-radius: 5px; 
+  background: var(--bg4);
+  margin: 0 auto; 
+  position: relative;
+  overflow: hidden;
+  font-size: 12px;
+  padding: 20px;
+  margin-top: 15px;
+}
