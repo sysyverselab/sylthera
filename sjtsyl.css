@@ -169,7 +169,7 @@ opacity:.4;
     bottom: 0;
     border-radius: 5px;
     padding: 1px;
-    background: linear-gradient(to left, var(--c1), var(--c2), var(--bg3));
+    background: linear-gradient(to left, var(--member-color, var(--c1)), var(--bg3));
     -webkit-mask: linear-gradient(var(--blanc) 0 0) content-box, linear-gradient(var(--blanc) 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -213,13 +213,13 @@ opacity:.4;
 }
 
 .pro-tab.active {
-    color: var(--c1) !important;
-    border-color: var(--c1) !important;
+    color: var(--member-color, var(--c1)) !important;
+    border-color: var(--member-color, var(--c1)) !important;
     background: var(--bg4) !important;
 }
 
 .pro-tab:hover {
-    border-color: var(--c1)!important;
+    border-color: var(--member-color, var(--c1))!important;
 }
   
 .post_contact img{
@@ -237,7 +237,7 @@ opacity:.4;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--c1);
+    color: var(--member-color, var(--c1));
     position: relative;
     overflow: hidden;
     transition:.6s;
