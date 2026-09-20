@@ -565,7 +565,7 @@ cat-right {
     display: block;
     width: 260px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--c2), transparent);
+    background: linear-gradient(90deg, transparent, var(--border1), transparent);
     margin: 16px auto 20px;
 }
   
@@ -655,25 +655,13 @@ cat-right {
     margin-bottom: 50px;
 }
   
-.guidebook::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -20px;
-    transform: translateX(-50%);
-    width: 70px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--c2), transparent);
-}
-  
 .guidebook_text{
     position: relative;
     padding: 20px;
-    font-size: 9px;
+    font-size: 11px;
     text-align: center;
     font-family: var(--ctt);
     border-radius: 5px;
-    text-transform: uppercase;
     text-align: justify;
     color: var(--txt);
 }
