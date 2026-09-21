@@ -224,7 +224,7 @@
 
 #FAM .FAM-inputbox {
   color: var(--txt3);
-  font-size: 12px;
+  font-size: 13px;
   background-color: var(--bg1);
   border: none;
   border-radius: 10px;
@@ -474,7 +474,7 @@ hr.FAM-hr {
 .FAM-forum-name,
 .FAM-topic-name {
   display: none;
-  font-size: 12px;
+  font-size: 13px;
   margin: 20px 20px 10px;
   text-transform: uppercase;
   grid-column: 1 / span 2;
@@ -636,7 +636,7 @@ hr.FAM-hr {
 #FAM a.FAM-page-link,
 .FAM-page-link {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
   background: var(--c1);
   color: var(--bg1);
@@ -778,7 +778,7 @@ strong.FAM-page-link {
 
 .FAM-msg-date,
 .FAM-msg-name {
-  font-size: 12px;
+  font-size: 13px;
   width: 100%;
   height: 20px;
   line-height: 24px;
@@ -942,7 +942,7 @@ strong.FAM-page-link {
   padding: 0;
   margin: 0;
   display: block;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .FAM-codebox cite a,
@@ -1212,7 +1212,7 @@ blockquote.FAM-codebox > div {
 }
 
 .FAM-tab-name {
-  font-size: 12px;
+  font-size: 13px;
   width: 80%;
   width: calc(100% - 16px);
   white-space: nowrap;
