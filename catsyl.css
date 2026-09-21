@@ -369,7 +369,7 @@ desc {
     padding: 5px;
     overflow: auto;
     font-family: var(--font-family-system);
-    font-size: 12px;
+    font-size: 13px;
     color: var(--txt);
     text-align: justify;
 }
@@ -573,7 +573,7 @@ cat-right {
   
 
 #c1 .inner_cat:nth-child(1) .cat_desc {
-    max-width: 420px;
+    max-width: 440px;
     margin: 0 auto;
 }
   
@@ -659,7 +659,7 @@ cat-right {
 .guidebook_text{
     position: relative;
     padding: 20px;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     font-family: var(--ctt);
     border-radius: 5px;
