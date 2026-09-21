@@ -109,8 +109,8 @@
     width:7px;
     height:7px;
     border-radius:50%;
-    background:var(--c1);
-    box-shadow: 0 0 10px var(--c1);
+    background: var(--member-color, var(--c1));
+    box-shadow: 0 0 10px var(--member-color, var(--c1));
     animation:echoPulse 2s infinite;
 }
   
