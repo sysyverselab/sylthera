@@ -187,6 +187,7 @@ cat-left cat-last{
   line-height:12px;
   font-family: poppins;
   font-weight: bolder;
+  line-height: 1.5;
 }
 
 cat-left cat-last a{
@@ -333,7 +334,7 @@ desc {
     font-size: 10px;
     letter-spacing: .08em;
     text-transform: uppercase;
-    color: var(--c4);
+    color: var(--txt3);
     white-space: nowrap;
 }
 
