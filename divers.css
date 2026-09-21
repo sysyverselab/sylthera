@@ -842,7 +842,7 @@ blockquote cite a {
     background: none;
     border: none;
     color: #777;
-    font-size: 12px;
+    font-size: 13px;
     cursor: pointer;
     padding: 0;
     line-height: 1;
@@ -1061,7 +1061,7 @@ textarea {
   border: none;
   border-radius: 5px;
   background: var(--bg5);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--txt) !important;
   padding: 8px 10px;
 }
@@ -1363,7 +1363,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 13px;
     color: inherit;
 }
 .switcheroo .switcheroo__squircle--button .switcheroo__popper {
@@ -1404,7 +1404,7 @@ button {
 }
 .switcheroo__popper-text {
     font-family: var(--font-family-system);
-    font-size: 12px;
+    font-size: 13px;
     text-transform: lowercase;
     white-space: nowrap;
     overflow: hidden;
