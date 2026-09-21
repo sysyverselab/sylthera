@@ -1153,7 +1153,7 @@ button {
   text-align: center;
   border-radius: 100px;
   border: 0px solid;
-  color:var(--c4);
+  color:var(--c3);
 }
 
 .color-scheme-toggle i {
@@ -1163,12 +1163,6 @@ button {
 
 .color-scheme-toggle i:hover {
     background: transparent;
-}
-
-
-
-.color-scheme-toggle:hover {
-    color: var(--c2);
 }
 
 /** COPYRIGHT & PANNEAU ADMIN **/
