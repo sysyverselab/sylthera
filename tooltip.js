@@ -1,4 +1,4 @@
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.profile-icon-btn[title]').forEach(function (el) {
     var t = el.getAttribute('title');
     if (t) {
@@ -6,6 +6,7 @@
       el.removeAttribute('title');
     }
   });
+
   var observer = new MutationObserver(function (mutations) {
     mutations.forEach(function (m) {
       m.addedNodes.forEach(function (node) {
@@ -23,4 +24,4 @@
     });
   });
   observer.observe(document.body, { childList: true, subtree: true });
-})();
+});
