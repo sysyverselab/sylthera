@@ -1,3 +1,4 @@
+js
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.profile-icon-btn[title]').forEach(function (el) {
     var t = el.getAttribute('title');
