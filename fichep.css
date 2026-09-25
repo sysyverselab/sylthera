@@ -252,7 +252,16 @@
     margin:0 auto;
 }
 
-.fa-meter-track .line{left:0;right:0;}
+.fa-meter-track .line{
+    left:0;
+    right:0;
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    background: var(--border1);
+    opacity: .5;
+    transform: translateY(-50%);
+}
 
 .fa-meter-track > span:not(.line){
     display:grid;
@@ -322,6 +331,7 @@
     border-radius: 50%;
     transform: translateY(-50%);
     z-index: 2;
+    animation: dotGlow 2.4s ease-in-out infinite;
 }
 
 .option.active font{
