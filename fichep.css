@@ -244,6 +244,7 @@
 }
 
 .fa-meter-track {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -299,6 +300,7 @@
 .fa-meter-track *:not(.active, font):nth-child(2):before,
 .fa-meter-track *:not(.active, font):last-child:before{
     content:'✦';
+    color: #fff;
     background:transparent;
     width:auto;
     height:auto;
