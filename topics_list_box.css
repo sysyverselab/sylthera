@@ -113,6 +113,7 @@
     flex-direction: column;
     align-self: center;
     margin-left: 9px;
+    gap: 5px; 
 }
 
 .topicslist-stats {
